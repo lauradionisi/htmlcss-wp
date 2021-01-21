@@ -6,7 +6,7 @@
 body{
   font-family: 'Montserrat', sans-serif;
 }
-main::after {
+.blocco_2::after {
   content: "";
   display: table;
   clear: both;
@@ -21,9 +21,8 @@ header {
   position: relative;
 }
 
-header .logo {
-  width: 15%;
-  height: auto;
+#logo img {
+  height: 70px;
 }
 
 nav.navigazione {
@@ -32,15 +31,15 @@ nav.navigazione {
   left: 0;
 }
 ul li {
-  float: left;
-  padding: 12px;
+  display: inline;
+  padding-right: 10px;
   list-style-type: none;
   text-transform: uppercase;
 }
 
 ul li a {
+    color: #71767e;
   text-decoration: none;
-  color: #71767e;
 }
   /* il main che contiene blocco_1 e blocco_2 */
 main {
@@ -49,54 +48,47 @@ main {
   margin-bottom: 1vh;
 }
 
-section.blocco_1 {
-  height: 60vh;
-  margin-bottom: 2vh;
-  border-radius: 15px;
-  background-image: url("../img/banner.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.layover {
+div.banner {
   position: relative;
+  height: 500px;
+  color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.banner img {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
+  object-fit: cover;
+}
+.banner-text {
+  position: absolute;
+  bottom: 20px;
+  width: 60%;
+  padding: 50px;
   z-index: 999;
 }
 
-h2.title,p.subtitle {
-  position: absolute;
-  color: white;
-  text-align: justify;
+.overlay {
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.1);
 }
-h2.title {
-  bottom: 25%;
-  left: 5%;
-}
-p.subtitle {
-  bottom: 15%;
-  left: 5%;
-}
-
 
 section.blocco_2 {
-  height: 70vh;
   margin-bottom: 1%;
 }
+
 div.top {
-  height: 20%;
   margin-bottom: 2vh;
   padding: 3%;
 }
 
 div.left,.right {
   width: 25%;
-  height: 73%;
   float: left;
 }
+
 div.middle {
   margin: 0 auto;
   width: 46%;
@@ -104,36 +96,30 @@ div.middle {
   margin-right: 2%;
   float: left;
 }
-#img-1,#img-3 {
-  width: 100%;
-  height: 20vh;
+
+.col-img {
+  position: relative;
   border-radius: 15px;
+  overflow: hidden;
 }
 
-#img-2 {
+.col-img img {
   width: 100%;
-  overflow: hidden;
-  border-radius: 15px;
-  height: 20vh;
+  height: 200px;
+  object-fit: cover;
 }
 
 .text h4 {
-  margin-bottom: 15px;
-}
-  /* footer */
-footer {
-  position: relative;
-  margin:0 auto;
-  width: 80%;
-  height: 10vh;
-}
-h3.footer-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding-left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-h3 span {
+footer {
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+.footer-text span {
   color: red;
+  font-size: 30px;
 }

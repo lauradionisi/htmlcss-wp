@@ -11,7 +11,10 @@
 
       <!-- header con logo e nav -->
     <header>
-      <img class="logo "src="img/logo.png" alt="logo-neori">
+      <div id="logo">
+        <img  src="img/logo.png" alt="logo-neori">
+      </div>
+
       <nav class="navigazione">
         <ul>
           <li><a href="#">features</a></li>
@@ -23,39 +26,52 @@
         </ul>
       </nav>
     </header>
-      <!-- inizio blocco_1 con banner, non sono riuscita ad adattare l'immagine da html e l'ho inserita come background-image nel css -->
-    <main>
-      <section class="blocco_1">
-        <div class="layover">
-          <h2 class="title">Praesent eros neque dictum sed est.<br> In tempor a ipsum quis posuere.</h2>
-          <p class="subtitle">Fusce posuere risus ut enim laoreet, quis accumsan lectus viverra. <br>Donec eu urna at eros aliquam vestibulum sit amet a nisl.</p>
-        </div>
-      </section>
 
-        <!-- inizio blocco_2 con titolo e colonne float. non sono riuscita proporzionare le immagini ed inserire il layover-->
+    <main>
+      <div class="banner">
+        <div class="overlay"></div>
+
+
+        <img src="img/banner.jpg" alt="Banner Neori">
+        <div class="banner-text">
+          <h2>Praesent eros neque dictum sed est.<br> In tempor a ipsum quis posuere.</h2>
+          <p >Fusce posuere risus ut enim laoreet, quis accumsan lectus viverra. <br>Donec eu urna at eros aliquam vestibulum sit amet a nisl.</p>
+        </div>
+      </div>
+
       <section class="blocco_2">
 
         <div class="top">
           <h1>Leadership</h1>
-          <span>Phasellus id nibh dolor</span>
+          <p>Phasellus id nibh dolor</p>
         </div>
 
         <div class="left">
-          <img id="img-1" src="img/img-1.jpg" alt="">
+          <div class="col-img">
+            <div class="overlay"></div>
+            <img src="img/img-1.jpg" alt="immagine-1">
+          </div>
           <div class="text">
             <h4>Lorem</h4>
             <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
         </div>
         <div class="middle">
-          <img id="img-2" src="img/banner-2.jpg" alt="">
+          <div class="col-img">
+            <div class="overlay"></div>
+            <img src="img/banner-2.jpg" alt="">
+          </div>
+
           <div class="text">
             <h4>Ipsum</h4>
             <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
         <div class="right">
-        <img id="img-3" src="img/img-3.jpg" alt="">
+          <div class="col-img">
+            <div class="overlay"></div>
+            <img src="img/img-3.jpg" alt="">
+          </div>
           <div class="text">
             <h4>Lorem</h4>
             <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
